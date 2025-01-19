@@ -4,6 +4,7 @@ import UsersPage from "./pages/UserPage.tsx";
 import VehiclePage from "./pages/VehiclePage.tsx";
 import StaffPage from "./pages/StaffPage.tsx";
 import EquipmentPage from "./pages/EquipmentPage.tsx";
+import CropPage from "./pages/CropPage.tsx";
 
 function App() {
     return (
@@ -22,7 +23,7 @@ function App() {
                         <Route path="/fields" element={<h1>Fields Page</h1>} />
                         <Route path="/monitoring-log" element={<h1>Monitoring Log Page</h1>} />
                         <Route path="/equipments" element={<EquipmentPage />} />
-                        <Route path="/crops" element={<h1>Crops Page</h1>} />
+                        <Route path="/crops" element={<CropPage />} />
                     </Routes>
                 </main>
             </div>
