@@ -5,6 +5,8 @@ import VehiclePage from "./pages/VehiclePage.tsx";
 import StaffPage from "./pages/StaffPage.tsx";
 import EquipmentPage from "./pages/EquipmentPage.tsx";
 import CropPage from "./pages/CropPage.tsx";
+import MonitoringLogPage from "./pages/MonitoringLogPage.tsx";
+import FieldPage from "./pages/FieldPage.tsx";
 
 function App() {
     return (
@@ -20,8 +22,8 @@ function App() {
                         <Route path="/users" element={<UsersPage />} />
                         <Route path="/vehicle" element={<VehiclePage />} />
                         <Route path="/staff" element={<StaffPage />} />
-                        <Route path="/fields" element={<h1>Fields Page</h1>} />
-                        <Route path="/monitoring-log" element={<h1>Monitoring Log Page</h1>} />
+                        <Route path="/fields" element={<FieldPage />} />
+                        <Route path="/monitoring-log" element={<MonitoringLogPage />} />
                         <Route path="/equipments" element={<EquipmentPage />} />
                         <Route path="/crops" element={<CropPage />} />
                     </Routes>
