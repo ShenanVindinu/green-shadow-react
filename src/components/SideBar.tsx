@@ -21,23 +21,23 @@ const Sidebar = () => {
                 style={{ backgroundColor: "#8FD14F" }}
             >
                 {/* Sidebar Top Section */}
-                <div className="px-4 py-6">
+                <div className="py-6">
                     {/* Sidebar Logo */}
-                    <div className="flex items-center space-x-3 mb-8">
+                    <div className="flex items-center space-x-3 mb-14 px-4">
                         <i className="bx bx-leaf text-white text-3xl"></i>
                         <span className="text-white text-lg font-bold">Green Shadow</span>
                     </div>
 
                     {/* Navigation Links */}
-                    <nav className="space-y-4">
+                    <nav className="space-y-6">
                         {menuItems.map((item) => (
                             <a
                                 key={item.id}
                                 href="#"
-                                className={`flex items-center space-x-3 text-white px-4 py-2 rounded transition-all duration-300 ${
+                                className={`flex items-center space-x-3 text-white px-4 py-2 transition-all duration-100 ${
                                     active === item.id
                                         ? "border-l-4 border-white" // Only the vertical line is white when active
-                                        : "hover:bg-green-600 hover:text-white"
+                                        : "hover:text-white"
                                 }`}
                                 onClick={() => setActive(item.id)}
                             >
@@ -49,10 +49,10 @@ const Sidebar = () => {
                 </div>
 
                 {/* Sidebar Bottom Section */}
-                <div className="px-4 py-4">
+                <div className="py-4">
                     <a
                         href="#"
-                        className="flex items-center space-x-3 text-white px-4 py-2 rounded transition-all duration-300 hover:bg-green-600 hover:text-white"
+                        className="flex items-center space-x-3 text-white px-4 py-2 transition-all duration-300 hover:text-white"
                     >
                         <i className="bx bx-log-out text-2xl"></i>
                         <span>SignOut</span>
