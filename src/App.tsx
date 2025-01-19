@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Sidebar from "./components/SideBar";
 import UsersPage from "./pages/UserPage.tsx";
 import VehiclePage from "./pages/VehiclePage.tsx";
+import StaffPage from "./pages/StaffPage.tsx";
 
 function App() {
     return (
@@ -16,7 +17,7 @@ function App() {
                         <Route path="/" element={<h1>Dashboard Content</h1>} />
                         <Route path="/users" element={<UsersPage />} />
                         <Route path="/vehicle" element={<VehiclePage />} />
-                        <Route path="/staff" element={<h1>Staff Page</h1>} />
+                        <Route path="/staff" element={<StaffPage />} />
                         <Route path="/fields" element={<h1>Fields Page</h1>} />
                         <Route path="/monitoring-log" element={<h1>Monitoring Log Page</h1>} />
                         <Route path="/equipments" element={<h1>Equipments Page</h1>} />
