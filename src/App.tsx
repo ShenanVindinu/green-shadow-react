@@ -3,6 +3,7 @@ import Sidebar from "./components/SideBar";
 import UsersPage from "./pages/UserPage.tsx";
 import VehiclePage from "./pages/VehiclePage.tsx";
 import StaffPage from "./pages/StaffPage.tsx";
+import EquipmentPage from "./pages/EquipmentPage.tsx";
 
 function App() {
     return (
@@ -20,7 +21,7 @@ function App() {
                         <Route path="/staff" element={<StaffPage />} />
                         <Route path="/fields" element={<h1>Fields Page</h1>} />
                         <Route path="/monitoring-log" element={<h1>Monitoring Log Page</h1>} />
-                        <Route path="/equipments" element={<h1>Equipments Page</h1>} />
+                        <Route path="/equipments" element={<EquipmentPage />} />
                         <Route path="/crops" element={<h1>Crops Page</h1>} />
                     </Routes>
                 </main>
