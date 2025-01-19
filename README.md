@@ -1,50 +1,67 @@
-# React + TypeScript + Vite
+Here's a simple README for your React-based inventory management system:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+# Inventory Management System (React)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A front-end inventory management system built using React. This application helps manage different entities (e.g., fields, crops, monitoring logs) in a user-friendly interface. It supports CRUD operations (Create, Read, Update, Delete), along with pagination, sorting, and image uploads.
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Add, Update, Delete, Clear**: Easily manage fields, crops, and logs with the respective buttons.
+- **Pagination**: View and navigate large datasets with pagination controls.
+- **Sorting**: Sort data tables by column headers.
+- **Image Upload**: Upload field or crop images and associate them with the respective records.
+- **Responsive UI**: Built using Bootstrap for responsive and clean design.
 
-- Configure the top-level `parserOptions` property like this:
+## Installation
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+1. Clone the repository:
+   ```bash
+   git clone <https://github.com/ShenanVindinu/green-shadow-react.git>
+   ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+4. Open your browser and visit `http://localhost:5173/` to view the application.
+
+## Usage
+
+- **Fields Page**: Manage fields by providing a name, location, and size. Upload images related to fields and perform CRUD operations.
+- **Crops Page**: Manage crop details, including common and scientific names, category, season, and field assignments.
+- **Monitoring Logs Page**: Track monitoring logs with date, details, staff ID, and field ID.
+- **VehiclePage**
+- **Equipment Page**
+- **Users**
+- **Staff**
+
+## Technologies Used
+
+- **React**: JavaScript library for building user interfaces.
+- **Bootstrap**: For responsive design and styling.
+- **React Hooks**: For managing state and side effects.
+- **TypeScript (ES6+)**: functionality.
+
+## Contributing
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/your-feature`).
+3. Commit your changes (`git commit -am 'Add your feature'`).
+4. Push to the branch (`git push origin feature/your-feature`).
+5. Create a new Pull Request.
+
+## License
+
+This project is licensed under the MIT License.
+
+---
+
+This README provides a simple overview, installation steps, usage instructions, and technology stack for your inventory management system.
