@@ -1,4 +1,5 @@
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+import Button from "./Button"; // Import the Button component
 
 const Sidebar = () => {
     const location = useLocation(); // Get the current route
@@ -28,31 +29,25 @@ const Sidebar = () => {
                 {/* Navigation Links */}
                 <nav className="space-y-6">
                     {menuItems.map((item) => (
-                        <Link
+                        <Button
                             key={item.id}
                             to={item.id}
-                            className={`flex items-center space-x-3 text-white px-4 py-2 transition-all duration-100 ${
-                                location.pathname === item.id
-                                    ? "border-l-4 border-white"
-                                    : "hover:text-white"
-                            }`}
-                        >
-                            <i className={`${item.icon} text-2xl`}></i>
-                            <span>{item.label}</span>
-                        </Link>
+                            icon={item.icon}
+                            label={item.label}
+                            isActive={location.pathname === item.id}
+                        />
                     ))}
                 </nav>
             </div>
 
             {/* Sidebar Bottom Section */}
             <div className="py-4">
-                <Link
+                <Button
                     to="/logout"
-                    className="flex items-center space-x-3 text-white px-4 py-2 transition-all duration-300 hover:text-white"
-                >
-                    <i className="bx bx-log-out text-2xl"></i>
-                    <span>Sign Out</span>
-                </Link>
+                    icon="bx bx-log-out"
+                    label="Sign Out"
+                    isActive={false} // Logout is not an active link
+                />
             </div>
         </div>
     );
