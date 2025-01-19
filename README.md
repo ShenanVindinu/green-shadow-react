@@ -1,7 +1,3 @@
-Here's a simple README for your React-based inventory management system:
-
----
-
 # Inventory Management System (React)
 
 A front-end inventory management system built using React. This application helps manage different entities (e.g., fields, crops, monitoring logs) in a user-friendly interface. It supports CRUD operations (Create, Read, Update, Delete), along with pagination, sorting, and image uploads.
